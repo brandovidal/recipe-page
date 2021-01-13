@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,700;1,500&display=swap");
 
 /**** Styles ****/
 :root {
-  --color-default: #181719;
-  --color-primary: #fff;
+  --color-default: #333;
+  --color-primary: #4f4f4f;
+  --color-orange: #f2994a;
+  --color-dark: #000;
+  --color-muted: #bdbdbd;
   --color-info: #a9a9a9;
 
   --font-default: "Playfair Display", sans-serif;
@@ -38,16 +41,223 @@ li {
 img {
   width: 100%;
 }
-
+.six-dots {
+  width: 12px;
+  height: 12px;
+}
+.text-orange {
+  color: var(--color-orange) !important;
+}
 
 /**** Container ****/
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5vh 5vw;
+  padding: 5vh 15vw;
 }
 
+/**** Heading ****/
+.container .heading {
+  margin-bottom: 24px;
+}
+.container .heading .title {
+  font-family: var(--font-default);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  color: var(--color-dark);
+  margin-bottom: 12px;
+  white-space: nowrap;
+}
+.container .heading .description {
+  display: flex;
+  margin-bottom: 12px;
+  margin-right: 25vw;
+}
+.container .heading .description img {
+  margin-right: 12px;
+}
+.container .heading .description p {
+  font-family: var(--font-info);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--color-primary);
+}
+
+/****  Principal   ****/
+.container .principal {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.container .estimates {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 50px 40px;
+  height: fit-content;
+  margin-left: 50px;
+}
+/****  Estimates  ****/
+.container .estimates .full {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .estimates .item {
+  font-family: var(--font-info);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 45px;
+}
+.container .estimates .item.first {
+  margin-top: 0;
+}
+.container .estimates .item .icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+.container .estimates .item .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: var(--color-info);
+  white-space: nowrap;
+}
+.container .estimates .item .subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--color-default);
+  white-space: nowrap;
+}
+
+/****  Ingredients  ****/
+.container .ingredients {
+  font-family: var(--font-default);
+}
+.container .ingredients .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-default);
+  margin-bottom: 15px;
+}
+.container .ingredients .subtitle {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--color-default);
+  margin-bottom: 25px;
+}
+.container .ingredients .listing {
+  font-family: var(--font-info);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--color-default);
+  margin-bottom: 30px;
+}
+.container .ingredients .listing .item {
+  margin-bottom: 4px;
+}
+.container .ingredients .listing .em {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+.container .ingredients .listing input[type="checkbox"] {
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/**** Steps ****/
+.container .steps {
+  font-family: var(--font-info);
+}
+.container .steps .title {
+  font-family: var(--font-default);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-default);
+  margin-bottom: 25px;
+}
+.container .steps {
+  margin-bottom: 100px;
+}
+.container .steps .listing {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-dark);
+  margin-bottom: 25px;
+}
+.container .steps .listing .item {
+  display: flex;
+  margin-bottom: 10px;
+}
+.container .steps .listing i:after {
+  content: "";
+  background: var(--color-orange);
+  color: white;
+  border-radius: 5px;
+  padding: 4px 16px 8px 16px;
+  margin-right: 15px;
+  font-family: var(--font-default);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+.container .steps .listing .first:after {
+  content: "1";
+}
+.container .steps .listing .second:after {
+  content: "2";
+}
+.container .steps .listing .third:after {
+  content: "3";
+}
+.container .steps .listing .fourth:after {
+  content: "4";
+}
+.container .steps .listing .fifth:after {
+  content: "5";
+}
+.container .steps .listing .sixth:after {
+  content: "6";
+}
+.container .steps .listing .seventh:after {
+  content: "7";
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-info);
+  font-style: italic;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--color-muted);
+}
 
 /**** Footer ****/
 .footer {
@@ -65,7 +275,91 @@ img {
   -moz-user-select: none;
 }
 
+/**** Media Queries ****/
+@media (max-width: 1024px) {
+  .container .heading .description {
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 5vh 5vw;
+  }
+  .container .heading {
+    margin-bottom: 24px;
+  }
+  .container .heading .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .container .heading .description {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .container .principal {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .estimates {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+  .container .estimates .full {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container .estimates .item {
+    font-family: var(--font-info);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .container .estimates .item .icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+  }
+  .container .estimates .item .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    text-transform: uppercase;
+    color: var(--color-info);
+  }
+  .container .estimates .item .subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: var(--color-default);
+  }
+  .container .ingredients .title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .container .ingredients .subtitle {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
 
+/*
+******************
 
+En un mundo basto de apariencias,
+nuestros hechos nos marcan como personas.
 
+Pero no definen nuestro futuro,
+solo nosotros elegimos nuestro propio rumbo. 
 
+********************
+*/
