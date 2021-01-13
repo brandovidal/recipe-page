@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "servor src index.html 5500 --reload --browse --static"
+  },
+  "devDependencies": {
+    "servor": "^4.0.2"
+  }
+}
