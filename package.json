@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Recipe Page",
   "scripts": {
+    "dev": "yarn start",
     "start": "servor src index.html 5500 --reload --browse --static"
   },
   "keywords": [],
