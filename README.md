@@ -67,6 +67,7 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 - [HTML5](https://html5.org/)
 - [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
+- [Surge](https://surge.sh/)
 
 ## Features
 
@@ -82,7 +83,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/brandovidal/recipe-page
 
 # Install dependencies
 $ yarn
