@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://plucky-cover.surge.sh/">
+    <a href="https://recipe-page.pages.dev/">
       Demo
     </a>
     <span> | </span>
@@ -51,7 +51,7 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo?
-  [Live demo](https://plucky-cover.surge.sh)
+  [Live demo](https://recipe-page.pages.dev/)
 
 - What was your experience?
   I feel gratifying to be able to solve this challenge.
