@@ -81,21 +81,33 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
+### Clone this repository
 ```bash
-# Clone this repository
-$ git clone https://github.com/brandovidal/recipe-page
+git clone https://github.com/brandovidal/recipe-page
+```
 
-# Install dependencies
-$ npm run install
+### Install dependencies
+```bash
+npm run install
+```
 
-# Run the app
-$ npm run dev
+### Run the app
+```bash
+npm run dev
+```
 
-# Deploy app
-$ npm run build
+### Deploy app
+```bash
+npm run build
+```
 
-# preview deploy
-$ npm run preview
+### Preview deploy
+```bash
+npm run preview
+```
+### Clean repository
+```bash
+npm run clean
 ```
 
 ## Acknowledgements
