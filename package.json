@@ -1,15 +1,17 @@
 {
-  "name": "recipe-page-master",
+  "name": "recipe-page",
   "version": "1.0.0",
   "description": "Recipe Page",
-  "scripts": {
-    "dev": "yarn start",
-    "start": "servor src index.html 5500 --reload --browse --static"
-  },
   "keywords": [],
   "author": "Brando Vidal",
   "license": "ISC",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "devDependencies": {
-    "servor": "^4.0.2"
+    "@types/node": "18.0.3",
+    "vite": "2.9.14"
   }
 }

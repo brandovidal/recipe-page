@@ -38,13 +38,13 @@
 
 ## Overview
 
-*Screenshot Laptop*
+_Screenshot Laptop_
 
-![Screenshot Laptop](recipe-page.png)
+![Screenshot Laptop](./desktop.png)
 
-*Screenshot Mobile*
+_Screenshot Mobile_
 
-![Screenshot Mobile](recipe-page-mobile.png)
+![Screenshot Mobile](./mobile.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
@@ -86,10 +86,16 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 $ git clone https://github.com/brandovidal/recipe-page
 
 # Install dependencies
-$ yarn
+$ npm run install
 
 # Run the app
-$ yarn start
+$ npm run dev
+
+# Deploy app
+$ npm run build
+
+# preview deploy
+$ npm run preview
 ```
 
 ## Acknowledgements
@@ -102,6 +108,5 @@ $ yarn start
 
 ## Contact
 
-- Website [brandovidal.com](https://{your-web-site-link})
-- GitHub [@brandovidal](https://{github.com/your-usermame})
-- Twitter [@brandovidal\_](https://{twitter.com/your-username})
+- GitHub [@brandovidal](https://github.com/brandovidal)
+- Twitter [@brandovidal](https://twitter.com/_brandovidal)
