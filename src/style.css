@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,700;1,500&display=swap");
-@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,700;1,500&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css');
 
 /**** Styles ****/
 :root {
@@ -10,8 +10,8 @@
   --color-muted: #bdbdbd;
   --color-info: #a9a9a9;
 
-  --font-default: "Playfair Display", sans-serif;
-  --font-info: "Montserrat", sans-serif;
+  --font-default: 'Playfair Display', sans-serif;
+  --font-info: 'Montserrat', sans-serif;
 }
 
 html,
@@ -100,6 +100,7 @@ img {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   padding: 50px 40px;
+  min-width: 216px;
   height: fit-content;
   margin-left: 50px;
 }
@@ -174,17 +175,11 @@ img {
 .container .ingredients .listing .item {
   margin-bottom: 4px;
 }
-.container .ingredients .listing .em {
-  font-style: italic;
-  font-weight: 500;
-  color: var(--color-dark);
-}
-.container .ingredients .listing input[type="checkbox"] {
+.container .ingredients .listing input[type='checkbox'] {
   border: 1px solid #828282;
   box-sizing: border-box;
   border-radius: 4px;
 }
-
 
 /**** Steps ****/
 .container .steps {
@@ -212,15 +207,26 @@ img {
 }
 .container .steps .listing .item {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+}
+.container .steps .listing i {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  margin-right: 15px;
 }
 .container .steps .listing i:after {
-  content: "";
+  content: '';
   background: var(--color-orange);
   color: white;
+  width: max-content;
+  width: 36px;
+  height: 36px;
   border-radius: 5px;
-  padding: 4px 16px 8px 16px;
-  margin-right: 15px;
+  padding: 0 11px;
+  /* padding: 0 11px 8px 11px; */
   font-family: var(--font-default);
   font-style: normal;
   font-weight: bold;
@@ -228,25 +234,25 @@ img {
   line-height: 32px;
 }
 .container .steps .listing .first:after {
-  content: "1";
+  content: '1';
 }
 .container .steps .listing .second:after {
-  content: "2";
+  content: '2';
 }
 .container .steps .listing .third:after {
-  content: "3";
+  content: '3';
 }
 .container .steps .listing .fourth:after {
-  content: "4";
+  content: '4';
 }
 .container .steps .listing .fifth:after {
-  content: "5";
+  content: '5';
 }
 .container .steps .listing .sixth:after {
-  content: "6";
+  content: '6';
 }
 .container .steps .listing .seventh:after {
-  content: "7";
+  content: '7';
 }
 .link {
   display: flex;
@@ -274,8 +280,6 @@ img {
   -webkit-user-select: none;
   -moz-user-select: none;
 }
-
-
 
 /**** Media Queries ****/
 @media (max-width: 1024px) {
@@ -351,5 +355,8 @@ img {
   .container .ingredients .subtitle {
     font-size: 16px;
     line-height: 21px;
+  }
+  .container .steps .listing .item {
+    margin-bottom: 11px;
   }
 }
